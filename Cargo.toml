@@ -1,0 +1,24 @@
+[package]
+name = "kbsb-rust-journey"
+version = "0.1.0"
+edition = "2021"
+
+# if you've created a non-default folder structure
+# use the following to tell cargo where to look
+# when running `cargo build` from the root folder
+# these binaries are built
+# you can set multiple binaries
+[[bin]]
+    name = "01-hello-world"
+    path = "language/01-hello-world/main.rs"
+
+[[bin]]
+    name = "02-cargo-new"
+    path = "language/02-cargo-new/cargo-new/src/main.rs"
+
+# if you've set multiple binaries this is the default `cargo run` binary
+default-run = "01-hello-world"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
